@@ -44,6 +44,8 @@ services:
         generateValue: true
       - key: NODE_OPTIONS
         value: "--max-old-space-size=460"
+      - key: N8N_RUNNERS_GRANT_TOKEN_TTL
+        value: "120"
 
 databases:
   - name: n8nDB
